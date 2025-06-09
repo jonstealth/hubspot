@@ -79,10 +79,10 @@ class HubSpotFormPost {
 
   public function hutk(){
     foreach($_COOKIE as $name => $val){
-	    if($name == "hubspotutk"){
-	      return $val;
-	    }
-	  }
+      if($name == "hubspotutk"){
+        return $val;
+      }
+    }
     return "";
   }
 
