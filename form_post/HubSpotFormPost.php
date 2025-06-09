@@ -55,8 +55,6 @@ class HubSpotFormPost {
       "pageName" => $this->page_name,
       "pageUri" => $this->page_path
     ];
-  
-    var_dump($post_body);
 
     $ch = curl_init();
 
@@ -69,8 +67,6 @@ class HubSpotFormPost {
     curl_setopt($ch, CURLOPT_TIMEOUT, 3);
   
     $output = curl_exec($ch);
-
-    var_dump($output);
     
     curl_close($ch);
   
